@@ -1,0 +1,98 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background-image: url("https://www.fabricutopia.com/wp-content/uploads/2021/10/il_fullxfull.1187407803_jclw-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.discover {
+  background-color: aqua;
+  border-radius: 12px;
+  padding: 22px 40px;
+  font-size: large;
+  transition: all ease 300ms;
+  margin: 12px;
+}
+
+.discover:hover {
+  background-color: aliceblue;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.discover:active {
+  transform: scale(0.8);
+}
+
+.name {
+  color: brown;
+  font-weight: bold;
+}
+
+.attributes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.attribute {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 6px 20px;
+  background-color: blueviolet;
+  color: whitesmoke;
+  margin-right: 12px;
+  font-size: large;
+  cursor: pointer;
+}
+
+.attribute:active {
+  border: 1px solid red;
+  background-color: white;
+  color: black;
+}
+
+.center {
+  border: 1px solid grey;
+  padding: 12px;
+  margin: 12px 24px;
+  background-color: rgba(255, 228, 196, 0.5);
+}
+
+.prevImages {
+  margin: 12px;
+}
+
+.left {
+  max-height: 700px;
+  overflow-y: auto;
+  background-color: rgba(0, 255, 255, 0.5);
+  padding: 6px;
+}
+
+.banned {
+  background-color: rgba(127, 255, 212, 0.5);
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 400px;
+  }
+
+  .attributes {
+    flex-direction: column;
+  }
+}
